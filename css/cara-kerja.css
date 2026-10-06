@@ -1,0 +1,7 @@
+/* CARA KERJA: latar putih dan garis waktu 5 langkah */
+.cara{background:var(--surface);border-block:1px solid var(--line)}
+.tl li{position:relative;padding:0 0 2.2rem 2.6rem;border-left:2px solid var(--line);margin-left:.7rem}
+.tl li::before{
+  content:"";position:absolute;left:-.62rem;top:.25rem;width:1.1rem;height:1.1rem;
+  border-radius:50%;background:var(--leaf);border:3px solid var(--bg);
+}

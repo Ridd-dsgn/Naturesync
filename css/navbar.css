@@ -1,0 +1,23 @@
+/* NAVBAR: bar atas, menu pil (laptop), tombol hamburger & menu HP */
+.topbar{
+  position:fixed;z-index:50;left:0;right:0;top:0;
+  padding:calc(env(safe-area-inset-top,0px) + 14px) 18px 14px;
+  display:flex;align-items:center;justify-content:space-between;
+  color:#fff;transition:background .3s;
+}
+.topbar.solid{background:rgba(14,42,27,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+@media (min-width:768px){.topbar{padding-left:24px;padding-right:24px}}
+
+/* Menu pil (laptop/tablet) */
+.pill{display:flex;gap:6px;padding:6px;border-radius:999px;background:rgba(255,255,255,.16);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.pill a{padding:.5rem 1rem;border-radius:999px;font-weight:500}
+.pill a:hover{background:rgba(255,255,255,.2)}
+@media (max-width:767px){.pill{display:none}}
+
+/* Hamburger & menu HP */
+.burger{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.16);display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.mnav{position:absolute;top:100%;left:12px;right:12px;margin-top:4px;padding:8px;border-radius:20px;background:rgba(14,42,27,.97);display:grid}
+.mnav[hidden]{display:none}
+.mnav a{padding:14px 16px;border-radius:12px;font-size:1.1rem;font-weight:500}
+.mnav a:active{background:rgba(255,255,255,.14)}
+@media (min-width:768px){.mnav{display:none!important}}

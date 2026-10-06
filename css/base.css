@@ -1,0 +1,27 @@
+/* BASE: variabel warna, reset, tipografi, tombol umum */
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F3F5EF; --surface:#FFFFFF; --ink:#102016; --muted:#566559;
+  --line:#D8DFD3; --deep:#0E2A1B; --leaf:#4C9A5F; --lime:#C9E265;
+}
+html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%}
+body{
+  margin:0; overflow-x:clip;
+  background:var(--bg); color:var(--ink);
+  font-family:'Inter Tight',system-ui,sans-serif; line-height:1.6;
+}
+h1,h2,h3{letter-spacing:-.035em;line-height:.98;font-weight:600}
+.muted{color:var(--muted)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
+  outline:3px solid var(--lime);outline-offset:3px;
+}
+/* Tombol umum (dipakai di hero & formulir) */
+.cta{display:inline-block;background:#fff;color:#0E2A1B;padding:.95rem 1.7rem;border-radius:999px;font-weight:600;transition:transform .15s}
+.cta:hover{transform:scale(1.04)}
+.cta--dark{background:var(--deep);color:#F3F5EF;border:0;cursor:pointer;justify-self:start}
+@media (prefers-reduced-motion:reduce){
+  .cta{transition:none}
+  html{scroll-behavior:auto}
+}

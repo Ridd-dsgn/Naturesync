@@ -1,0 +1,4 @@
+/* DAFTAR: formulir pendaftaran */
+.field{width:100%;padding:.9rem 1.1rem;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
+.form-msg{color:var(--leaf)}
+.form-msg.is-error{color:#C2452B}

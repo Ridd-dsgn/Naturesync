@@ -1,0 +1,15 @@
+/* HERO: foto latar, judul, subjudul. Ganti foto: simpan sebagai foto/hero.jpg */
+.hero{
+  position:relative;
+  min-height:100vh;min-height:100svh;
+  display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
+  text-align:center;color:#fff;overflow:hidden;
+  background:#0E2A1B url("../foto/hero.jpg") center/cover no-repeat;
+}
+.hero::after{ /* lapisan gelap agar teks terbaca */
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,16,10,.55) 0,rgba(6,16,10,0) 28%,rgba(6,16,10,0) 45%,rgba(6,16,10,.82) 100%);
+}
+.hero>*:not(.topbar){position:relative;z-index:2}
+.h1{font-size:clamp(2.5rem,7.5vw,6rem);line-height:.88;letter-spacing:-.055em;font-weight:600;text-wrap:balance}
+.hero-sub{line-height:1.25;text-wrap:balance}

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>NATURESYNC — Jadikan Sekolahmu Laboratorium Sains</title>
+
+    <!-- Font & Tailwind (utility class) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS: satu file per bagian -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/fitur.css" />
+    <link rel="stylesheet" href="css/cara-kerja.css" />
+    <link rel="stylesheet" href="css/manfaat.css" />
+    <link rel="stylesheet" href="css/daftar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="topbar">
+        <a
+          href="#"
+          class="flex items-center gap-2 font-semibold text-xl tracking-tight"
+          aria-label="NATURESYNC beranda"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 32 32"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="16" cy="16" r="4" />
+            <path
+              d="M16 3v6M16 23v6M3 16h6M23 16h6M7 7l4 4M21 21l4 4M25 7l-4 4M11 21l-4 4"
+            />
+          </svg>
+          NatureSync
+        </a>
+        <nav class="pill" aria-label="Navigasi utama">
+          <a href="#fitur">Fitur</a><a href="#cara">Cara kerja</a
+          ><a href="#manfaat">Manfaat</a><a href="#daftar">Daftar</a>
+        </nav>
+        <a href="#kontak" class="font-medium hidden md:block">Kontak</a>
+        <button
+          class="burger md:hidden"
+          id="bb"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="mnav"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path id="bi" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+        <nav class="mnav" id="mnav" aria-label="Menu seluler" hidden>
+          <a href="#fitur">Fitur</a><a href="#cara">Cara kerja</a
+          ><a href="#manfaat">Manfaat</a><a href="#daftar">Daftar</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </div>
+
+      <div class="px-5 md:px-6 pt-28 pb-12 md:pb-16 max-w-5xl">
+        <h1 class="h1">Jadikan sekolahmu laboratorium sains</h1>
+        <p class="hero-sub mt-6 text-lg md:text-xl max-w-xl mx-auto">
+          Pasang sensor, baca datanya, dan temukan jawabannya sendiri, langsung
+          di halaman sekolahmu.
+        </p>
+        <a href="#daftar" class="cta mt-8">Mulai di sekolahku</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- MASALAH -->
+      <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <h2 class="text-4xl md:text-6xl max-w-4xl">
+          Skor sains kita 383. Rata-rata OECD 485.
+        </h2>
+        <p class="muted text-lg mt-6 max-w-2xl">
+          Data PISA 2022 menunjukkan literasi sains siswa Indonesia tertinggal
+          jauh. Salah satu sebabnya, laboratorium IPA mahal dan banyak sekolah
+          tidak mampu menyediakannya. NatureSync memakai ruang yang sudah ada:
+          kebun, pohon, taman, dan kolam sekolahmu.
+        </p>
+      </section>
+
+      <!-- FITUR -->
+      <section id="fitur" class="fitur-bg">
+        <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+          <h2
+            class="fitur-title text-4xl md:text-6xl text-center max-w-3xl mx-auto"
+          >
+            Dibangun untuk sekolah yang ingin belajar dari data
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 md:mt-16">
+            <!-- 01 -->
+            <article class="fcard fcard--lime">
+              <div class="fhead fhead--pad">
+                <h3>Sensor<br />Node</h3>
+                <div class="text-right">
+                  <span class="no">(01)</span>
+                  <div class="ico">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#0E1A12"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    >
+                      <circle cx="12" cy="12" r="2.5" />
+                      <path
+                        d="M7.5 7.5a6.4 6.4 0 000 9M16.5 7.5a6.4 6.4 0 010 9M4.5 4.5a10.6 10.6 0 000 15M19.5 4.5a10.6 10.6 0 010 15"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="ph ph--flat">
+                <svg
+                  viewBox="0 0 400 340"
+                  preserveAspectRatio="xMidYMid slice"
+                  aria-hidden="true"
+                >
+                  <rect width="400" height="340" fill="#14341f" />
+                  <g fill="#2F7A44">
+                    <circle cx="40" cy="60" r="46" />
+                    <circle cx="170" cy="30" r="52" />
+                    <circle cx="320" cy="70" r="50" />
+                    <circle cx="90" cy="190" r="56" />
+                    <circle cx="260" cy="200" r="58" />
+                    <circle cx="370" cy="290" r="50" />
+                    <circle cx="30" cy="310" r="48" />
+                  </g>
+                  <g fill="#F4F1E4">
+                    <circle cx="70" cy="120" r="7" />
+                    <circle cx="150" cy="90" r="6" />
+                    <circle cx="230" cy="130" r="7" />
+                    <circle cx="330" cy="150" r="6" />
+                    <circle cx="120" cy="250" r="7" />
+                    <circle cx="300" cy="260" r="6" />
+                  </g>
+                  <path d="M200 340V150" stroke="#E8EFE4" stroke-width="6" />
+                  <rect
+                    x="178"
+                    y="118"
+                    width="44"
+                    height="34"
+                    rx="6"
+                    fill="#E8EFE4"
+                  />
+                  <circle cx="200" cy="135" r="7" fill="#C9E265" />
+                </svg>
+                <img
+                  src="foto/kebun.jpg"
+                  alt="Siswa menyentuh tanaman di kebun sekolah"
+                  onerror="this.remove()"
+                />
+                <p class="cap">
+                  Ukur tanah, udara, dan cahaya di tiap zona setiap 15 menit
+                </p>
+              </div>
+            </article>
+
+            <!-- 02 -->
+            <article class="fcard fcard--blue">
+              <div class="fhead">
+                <h3>Digital<br />Twin</h3>
+                <div class="text-right">
+                  <span class="no">(02)</span>
+                  <div class="ico">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#0E1A12"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M3 7l9-4 9 4-9 4-9-4zM3 12l9 4 9-4M3 17l9 4 9-4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <svg
+                viewBox="0 0 320 170"
+                class="fchart my-6 w-full"
+                role="img"
+                aria-label="Contoh grafik suhu dua zona"
+              >
+                <g stroke="#fff" stroke-opacity=".6">
+                  <path d="M0 30H320M0 85H320M0 140H320" />
+                </g>
+                <polyline
+                  points="0,120 50,105 100,80 150,50 200,40 250,55 320,70"
+                  fill="none"
+                  stroke="#0E1A12"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <polyline
+                  points="0,135 50,125 100,112 150,100 200,92 250,98 320,104"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="200" cy="40" r="6" fill="#0E1A12" />
+                <circle cx="200" cy="92" r="6" fill="#fff" />
+              </svg>
+              <p class="fdesc text-lg">
+                Bandingkan data antar zona di peta sekolah dan cari tahu kenapa
+                suhunya berbeda
+              </p>
+            </article>
+
+            <!-- 03 -->
+            <article class="fcard fcard--sage md:col-span-2 lg:col-span-1">
+              <div class="c3row">
+                <div class="ph c3ph">
+                  <svg
+                    viewBox="0 0 200 380"
+                    preserveAspectRatio="xMidYMid slice"
+                    aria-hidden="true"
+                  >
+                    <defs>
+                      <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#8FC4A0" />
+                        <stop offset="1" stop-color="#2B5A3C" />
+                      </linearGradient>
+                    </defs>
+                    <rect width="200" height="380" fill="url(#pg)" />
+                    <circle cx="100" cy="150" r="42" fill="#F2D3B3" />
+                    <path
+                      d="M40 380c0-90 30-150 60-150s60 60 60 150z"
+                      fill="#1F3A2E"
+                    />
+                    <path
+                      d="M58 138c0-40 84-40 84 0-20-14-64-14-84 0z"
+                      fill="#3a2a1d"
+                    />
+                  </svg>
+                  <img
+                    src="foto/siswa.jpg"
+                    alt="Siswa mencatat tumbuhan di halaman sekolah"
+                    onerror="this.remove()"
+                  />
+                </div>
+                <div class="c3col">
+                  <div class="fhead fhead--tight">
+                    <h3>Citizen &amp; Kelas</h3>
+                    <div class="text-right">
+                      <span class="no">(03)</span>
+                      <div class="ico">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#0E1A12"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        >
+                          <path
+                            d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="fdesc text-lg">
+                    Catat flora dan fauna lewat ponsel, lalu ubah jadi proyek
+                    belajar bersama guru
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARA KERJA -->
+      <section id="cara" class="cara">
+        <div
+          class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 md:gap-14"
+        >
+          <div>
+            <h2 class="text-4xl md:text-6xl">Lima langkah menuju lab hidup</h2>
+            <p class="muted mt-6 max-w-md">
+              Pilot pertama dirancang selama 6 bulan di sekolah percontohan.
+            </p>
+          </div>
+          <ol class="tl">
+            <li>
+              <h3 class="text-xl">Petakan zona</h3>
+              <p class="muted">
+                Bagi sekolah menjadi 4–6 zona, misalnya kebun sayur, pohon
+                peneduh, taman bunga, dan kolam atau biopori.
+              </p>
+            </li>
+            <li>
+              <h3 class="text-xl">Pasang sensor</h3>
+              <p class="muted">
+                Satu Node di tiap zona. Komponennya murah dan bisa dirakit klub
+                sains atau robotika.
+              </p>
+            </li>
+            <li>
+              <h3 class="text-xl">Hidupkan digital twin</h3>
+              <p class="muted">
+                Data sensor muncul di peta interaktif beserta tren historisnya.
+              </p>
+            </li>
+            <li>
+              <h3 class="text-xl">Aktifkan citizen science</h3>
+              <p class="muted">
+                Siswa mencatat flora dan fauna lewat ponsel. Catatan yang
+                divalidasi guru masuk ke twin.
+              </p>
+            </li>
+            <li>
+              <h3 class="text-xl">Masuk ke kurikulum</h3>
+              <p class="muted">
+                Guru menyusun proyek STEM dengan data nyata sebagai sumber
+                utama.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- MANFAAT -->
+      <section id="manfaat" class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <h2 class="text-4xl md:text-6xl mb-12">Untuk guru dan untuk siswa</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="benefit benefit--guru rounded-3xl p-8 md:p-10">
+            <h3 class="text-3xl">Guru</h3>
+            <ul class="mt-6 space-y-3 opacity-90">
+              <li>Modul proyek siap pakai, tidak mulai dari nol.</li>
+              <li>Data nyata untuk bahan ajar dan penilaian.</li>
+              <li>Tidak perlu membangun laboratorium baru.</li>
+              <li>Pendampingan dan pelatihan di awal.</li>
+            </ul>
+          </div>
+          <div class="benefit benefit--siswa rounded-3xl p-8 md:p-10">
+            <h3 class="text-3xl">Siswa</h3>
+            <ul class="mt-6 space-y-3">
+              <li>Belajar dari data sekolah sendiri, bukan hanya buku.</li>
+              <li>Merumuskan hipotesis dan mengujinya.</li>
+              <li>Merakit sensor dan mencatat spesies lokal.</li>
+              <li>Punya portofolio proyek STEM dari data nyata.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DAFTAR -->
+      <section id="daftar" class="max-w-3xl mx-auto px-6 pb-16 md:pb-24">
+        <h2 class="text-4xl md:text-6xl">Ingin NatureSync di sekolahmu?</h2>
+        <p class="muted text-lg mt-5">
+          Isi formulir singkat ini. Kami akan menghubungimu untuk membahas
+          pilot.
+        </p>
+        <form id="f" class="mt-10 grid gap-4" novalidate>
+          <label class="grid gap-2 font-medium"
+            >Nama<input class="field" name="nama" required autocomplete="name"
+          /></label>
+          <label class="grid gap-2 font-medium"
+            >Peran<select class="field" name="peran">
+              <option>Guru</option>
+              <option>Siswa</option>
+              <option>Lainnya</option>
+            </select></label
+          >
+          <label class="grid gap-2 font-medium"
+            >Asal sekolah<input class="field" name="sekolah" required
+          /></label>
+          <label class="grid gap-2 font-medium"
+            >Email<input
+              class="field"
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+          /></label>
+          <button class="cta cta--dark" type="submit">Kirim pendaftaran</button>
+          <p id="msg" role="status" class="form-msg font-medium"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="kontak" class="site-footer">
+      <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
+        <div>
+          <p class="footer-brand text-3xl font-semibold">NatureSync</p>
+          <p class="opacity-70 mt-3 max-w-sm">
+            Transformasi lingkungan sekolah menjadi Living Science Laboratory.
+          </p>
+        </div>
+        <div class="opacity-90">
+          <p class="font-semibold">Tim penyusun</p>
+          <p>Farid Rizky Adeval</p>
+          <p>Muhammad Dafa Ariady</p>
+          <p class="opacity-70 mt-2">Universitas Riau, Pekanbaru</p>
+          <a
+            class="underline mt-3 inline-block"
+            href="mailto:kontak@naturesync.example"
+            >kontak@naturesync.example</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript: satu file per fitur -->
+    <script src="js/navbar.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
